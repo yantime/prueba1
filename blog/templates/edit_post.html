@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+
+{% block content %}
+
+<div>
+
+<h1> Editar POst </h1> 
+
+<form method = "POST">
+
+{% csrf_token %}
+
+{{ form.as_p}}
+
+<button type="submit" class="btn btn-primary" > Actualizar</button> 
+
+
+
+</form> 
+
+
+</div>
+
+
+{% endblock content %}

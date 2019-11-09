@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+
+{% block content %}
+<div>
+<h1> Eliminar Post: {{post.title}} </h1> 
+<form method = "POST">
+{% csrf_token %}
+<h2> Estas seguro? </h2> 
+<button type="submit" class="btn btn-primary" > Eliminar </button> 
+</form> 
+</div>
+{% endblock content %}
+
